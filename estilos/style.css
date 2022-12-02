@@ -1,0 +1,505 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+    color: black !important;
+    text-transform: inherit;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 85px;
+}
+
+.logo {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.carrito-icon {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.compras {
+    width: 75px;
+    height: 40px;
+    background-color: white;
+    border: 1px;
+    font-size: 35px;
+}
+
+.compras :hover {
+    background-color: rgb(75, 67, 67) !important;
+    color: white !important;
+    border-radius: 15px !important;
+}
+
+.boton-enviar:hover {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+}
+
+.header__nav {
+    width: 850px;
+    display: flex;
+    font-size: 22px;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: uppercase;
+
+}
+
+.logo__shiro {
+    width: 200px;
+    height: 65px;
+
+}
+
+main {
+    background-color:rgb(252, 247, 247);
+}
+
+.img__carrusel {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.carrusel__inicio-productos {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 50px
+}
+
+.estilo-titulos {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
+.seccion_productos {
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 220px);
+    grid-template-rows: repeat(2, 350px);
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 30px;
+   
+    
+
+}
+
+.productos_img {
+    width: 200px;
+    height: 200px;
+
+}
+
+.titulo-productos {
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+
+}
+
+.precio {
+    font-size: 20px;
+    color: green;
+    
+
+}
+
+.stock {
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.boton-agregar-carrito {
+    font-size: 18px;
+    height: 35px;
+    border-radius: 5px;
+    width: 170px;
+    background-color: white;
+}
+
+.boton-agregar-carrito:hover {
+    background-color: green;
+    color: white;
+}
+
+.modal-body {
+    height: auto !important;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.carrito-img {
+    width: 30px;
+    height: 30px;
+
+}
+
+.carrito-vacio {
+    display: grid;
+    grid-template-columns: repeat(1, 750px);
+}
+
+#carrito {
+    font-size: 15px;
+    display: grid;
+    width: auto;
+    grid-template-columns: repeat(5, 150px);
+    text-align: center;
+
+}
+
+
+/* ......................... */
+.novedades {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    height: 200px;
+    margin-top: 100px;
+
+}
+
+.novedaves-form {
+    text-align: center;
+
+}
+
+.input-novedades {
+    width: 600px;
+    height: 40px;
+}
+
+.boton-enviar {
+    width: 100px;
+    height: 40px;
+}
+
+.buscador-productos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    background-color: #dddddd;
+}
+
+.footer .footer__info {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer .seccion__institucional {
+    list-style: none;
+    display: grid;
+    gap: 8px;
+}
+
+.footer .seccion__ayuda {
+    list-style: none;
+    display: grid;
+    gap: 8px;
+}
+
+.footer .seccion__seguinos {
+    list-style: none;
+    display: grid;
+    gap: 8px;
+}
+
+.footer .seccion__seguinos .icono__seguinos {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.medios__pago {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #dddddd;
+}
+
+.medios__pago .titulo__pago {
+    width: 33%;
+    justify-content: center;
+    display: flex;
+}
+
+.medios__pago .icono__pago {
+    width: 67%;
+}
+
+.medios__pago .logo__pagos {
+    width: 50px;
+    height: 30px;
+}
+
+.derechos__reservados {
+    text-align: center;
+    background-color: #dddddd;
+    padding-top: 10px;
+}
+
+/* ................................................... */
+.modal-content {
+    width: 800px !important;
+
+}
+
+.modal-dialog {
+    max-width: 800px !important;
+}
+
+.navbar {
+    display: none !important;
+}
+
+/* version adaptable............................. */
+@media screen and (max-width:1023px) {
+    .seccion_productos {
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: repeat(4, auto);
+    }
+
+    .productos_img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .stock {
+        font-size: 15px;
+    }
+
+    .boton-agregar-carrito {
+        font-size: 14px;
+        width: 125px;
+    }
+
+    .titulo-productos {
+        font-size: 17px;
+    }
+
+    .precio {
+        font-size: 18px;
+    }
+
+    .header__nav {
+        font-size: 18px;
+    }
+
+    .logo__shiro {
+        width: 150px;
+        height: 60px;
+    }
+    .modal-content {
+        width: 600px !important;
+    
+    }
+    
+    .modal-dialog {
+        max-width: 600px !important;
+    }
+    #carrito {
+        font-size: 15px;
+        display: grid;
+        width: auto;
+        grid-template-columns: repeat(5, 100px);
+        text-align: center;
+    
+    }
+    .carrito-vacio {
+        display: grid;
+        grid-template-columns: repeat(1, 550px);
+    }
+}
+
+@media screen and (max-width:768px) {
+    .seccion_productos {
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: repeat(4, auto);
+    }
+
+    .productos_img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .stock {
+        font-size: 15px;
+    }
+
+    .boton-agregar-carrito {
+        font-size: 14px;
+        width: 125px;
+    }
+
+    .titulo-productos {
+        font-size: 17px;
+    }
+
+    .precio {
+        font-size: 18px;
+    }
+
+    .navbar {
+        display: flex !important;
+        width: 100%;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .logo {
+        width: 60% !important;
+    }
+
+    .carrito-icon {
+        width: 40%;
+    }
+
+    .input-novedades {
+        width: 400px;
+    }
+    .modal-content {
+        width: 500px !important;
+    
+    }
+    
+    .modal-dialog {
+        max-width: 500px !important;
+    }
+    #carrito {
+        font-size: 16px;
+        display: grid;
+        width: auto;
+        grid-template-columns: repeat(5, 100px);
+        text-align: center;
+    
+    }
+    h6{
+        font-size: 14px !important;
+    }
+    .carrito-vacio {
+        display: grid;
+        grid-template-columns: repeat(1, 450px);
+    }
+    .w-100{
+        height: 270px;
+    }
+
+}
+
+@media screen and (max-width:425px) {
+    .seccion_productos {
+        display: grid;
+        grid-template-columns: repeat(1, 250px);
+        grid-template-rows: repeat(8, auto);
+    }
+
+    .productos_img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .stock {
+        font-size: 18px;
+    }
+
+    .boton-agregar-carrito {
+        font-size: 18px;
+        width: 155px;
+    }
+
+    .titulo-productos {
+        font-size: 20px;
+    }
+
+    .precio {
+        font-size: 22px;
+    }
+
+    .input-novedades {
+        width: 300px;
+    }
+    .boton-enviar {
+        width: 70px;
+        height: 40px;
+    }
+    .footer__info{
+        display: grid !important;
+        grid-template-columns: repeat(2,auto) !important;
+        grid-template-rows: repeat(1,auto) !important;
+    }
+    .modal-content {
+        width: 300px !important;
+    
+    }
+    
+    .modal-dialog {
+        max-width: 300px !important;
+    }
+    #carrito {
+        font-size: 15px;
+        display: grid;
+        width: auto;
+        grid-template-columns: repeat(5, 60px);
+        text-align: center;
+    
+    }
+    h6{
+        font-size: 14px !important;
+    }
+    .carrito-vacio {
+        display: grid;
+        grid-template-columns: repeat(1, 300px);
+    }
+    .w-100{
+        object-fit: cover;
+    }
+}
